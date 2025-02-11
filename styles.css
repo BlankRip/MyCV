@@ -225,16 +225,13 @@
         border: 2px solid #f4dd0b;
     }
     
-    .resume .resume_right .resume_work ul li:after,
-    .resume .resume_right .resume_achievements ul li:after,
-    .resume .resume_right .resume_majorprojects ul li:after,
-    .resume .resume_right .resume_education ul li:after {
+    .resume .resume_right .withSideLine li:after {
         content: "";
         position: absolute;
         top: 14px;
         left: -21px;
         width: 2px;
-        height: 115px;
+        height: var(--workExp-li-height);
         background: #f4dd0b;
     }
     
@@ -263,9 +260,9 @@
         color: rgb(0, 0, 0);
     }
     
-    .resume_right .resume_item p {
+    /* .resume_right .resume_item p {
         text-align: justify;
-    }
+    } */
     
     .resume .resume_right :any-link {
         color: rgb(255, 255, 255);
